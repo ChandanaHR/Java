@@ -68,5 +68,7 @@ BigInteger has unlimited size (only limited by RAM).
 
       Binary operators :
       Arithmetic operators: +, -, *, /, %
-      
-
+      Comparison operators: ==, !=, >,<,>=,<=
+      Logical operators: &&, ||, !
+      Bitwise operators
+          AND - &, OR-`, NOT - ~, XOR-^, Left shift:<<, Right shift: >>, Unsigned right shift: >>>
