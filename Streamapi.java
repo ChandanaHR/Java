@@ -427,3 +427,30 @@ example 2) List<List<Integer>> numbers =
 
 numbers.stream()
        .forEach(System.out::println);
+
+
+1e) Terminal operation
+  A Terminal Operation produces the final result and executes the stream pipeline.
+  a) collect(): collect() gathers the processed elements from the Stream and stores them into a collection like a List, Set, or Map.
+  Syntax: stream.collect(Collectors.toList());
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Demo {
+
+    public static void main(String[] args) {
+
+        List<Integer> numbers =
+                List.of(10,15,20,25,30);
+
+        List<Integer> evenNumbers =
+                numbers.stream()
+                       .filter(n -> n % 2 == 0)
+                       .collect(Collectors.toList());
+
+        System.out.println(evenNumbers);
+
+    }
+}
+
+b) 
